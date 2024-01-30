@@ -12,10 +12,6 @@
     class Food {
       private $name;
       private $price;
-      
-      public function set_price(int $price){
-        $this->price = $price;
-      }
 
       public function show_price() {
         echo $this->price . '<br>';
@@ -31,10 +27,6 @@
       private $name;
       private $height;
       private $weight;
-
-      public function set_height(int $height){
-        $this->height = $height;
-      }
 
       public function show_height() {
         echo $this->height . '<br>';
@@ -57,11 +49,9 @@
 
     echo '<br>';
 
-    $food->set_price(250);
-    $food->show_price();
+    $food->show_price(250);
 
-    $animal->set_height(60);
-    $animal->show_height();
+    $animal->show_height(60);
     ?>
 </body>
 
